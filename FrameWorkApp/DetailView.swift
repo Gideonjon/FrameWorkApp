@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    var framework : Framework
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            FrameworkTitleView(framework: framework)
+            
+            
+            
+        }
     }
 }
 
 #Preview {
-    DetailView()
+    DetailView(framework: MockData.sampleFramework)
+
 }
