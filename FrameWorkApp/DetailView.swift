@@ -13,13 +13,27 @@ struct DetailView: View {
     
     var body: some View {
         VStack{
+            Spacer()
             FrameworkTitleView(framework: framework)
+            Text(framework.description)
+                .font(.body)
+                .padding()
+            Spacer()
             
+            Button{
+                      }label: {
+                          AFButtoon(title: "Learn More")
+                          
+                      }
+                  }
+                
+              }
+          
             
             
         }
-    }
-}
+        
+
 
 #Preview {
     DetailView(framework: MockData.sampleFramework)
