@@ -45,8 +45,8 @@ struct DetailView: View {
                           
                       }
                   }
-        .sheet(isPresented:$isShowingSafariView, content:{
-            SafariView(url: URL(string: framework.urlString)!)
+        .fullScreenCover(isPresented:$isShowingSafariView, content:{
+            SafariView(url: URL(string: framework.urlString) ?? URL (string: "")!)
             
         })
                 
